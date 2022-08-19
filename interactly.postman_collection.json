@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "278838fa-1347-498d-8e09-10f9ae699a0e",
+		"name": "interactly",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17294477"
+	},
+	"item": [
+		{
+			"name": "createContact",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\":\"Mausam\",\r\n    \"last_name\":\"Rawat\",\r\n    \"email\":\"mausam2001kv@gamil.com\",\r\n    \"mobile_number\":6392933293\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/contact/createContact?data_store=DATABASE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contact",
+						"createContact"
+					],
+					"query": [
+						{
+							"key": "data_store",
+							"value": "DATABASE"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getContact",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"contact_id\":\"62ff1af1cde4e50208506cf8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/contact/getContact?data_store=DATABASE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contact",
+						"getContact"
+					],
+					"query": [
+						{
+							"key": "data_store",
+							"value": "DATABASE"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateContact",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"contact_id\":\"62ff1af1cde4e50208506cf8\",\r\n    \"first_name\":\"Mannu\",\r\n    \"last_name\":\"singh\",\r\n    \"email\":\"mausam2001kv@gamil.com\",\r\n    \"mobile_number\":6392933288\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/contact/updateContact?data_store=DATABASE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contact",
+						"updateContact"
+					],
+					"query": [
+						{
+							"key": "data_store",
+							"value": "DATABASE"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteContact",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"contact_id\":\"62ff1af1cde4e50208506cf8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/contact/deleteContact?data_store=DATABASE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contact",
+						"deleteContact"
+					],
+					"query": [
+						{
+							"key": "data_store",
+							"value": "DATABASE"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
